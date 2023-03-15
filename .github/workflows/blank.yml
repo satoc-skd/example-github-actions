@@ -38,7 +38,6 @@ jobs:
       #
       - name: exec ls and redirect
         run: |
-          cat README.md
-          ls -al
           mkdir working
           ls -al > ./working/result.txt
+          cat ./working/result.txt
