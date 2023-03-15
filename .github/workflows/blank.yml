@@ -41,3 +41,9 @@ jobs:
           mkdir working
           ls -al > ./working/result.txt
           cat ./working/result.txt
+      
+      #
+      - name: cat README.md
+        run: |
+          cat ./README.md
+          ls -als
