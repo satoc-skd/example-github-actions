@@ -47,3 +47,9 @@ jobs:
         run: |
           cat ./README.md
           ls -als
+
+      - name: store to artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: my-ls-result
+          path: ./working/result.txt
